@@ -1,0 +1,80 @@
+.new{
+    display: flex;
+    width: 100%;
+
+    .newContainer{
+        flex: 6;
+
+        .top, .bottom {
+            box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.75);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+
+            h1{
+                font-size: 20px;
+                font-weight: bold;
+                color: #999;
+            }
+
+            .left{
+                flex: 1;
+                text-align: center;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .right{
+                flex: 2;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+
+            .formInput{
+                width: 40%;
+
+                label{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .icon{
+                        cursor: pointer;
+                    }
+                }
+
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid rgba(211, 211, 211, 0.789);
+                    outline: none;
+                }
+            }
+
+            button{
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                background-color: rgba(102, 51, 153, 0.905);
+                color: white;
+                margin-top: 15px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}

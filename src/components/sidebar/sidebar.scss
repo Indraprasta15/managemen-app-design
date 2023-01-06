@@ -1,0 +1,103 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(231, 230, 230);
+    height: 100vh;
+    background-color: rgb(237, 233, 249);
+    position: sticky;
+    top: 0;
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: rebeccapurple;
+            cursor: pointer;
+        }
+    }
+
+    hr{
+        height: 0px;
+        border: 0.7px solid lightgray;
+    }
+
+    .center{
+        padding-left: 10px;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title{
+            font-size: 10px;
+            font-weight: bold;
+            color: #999;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #a99cf248;
+            }
+
+            .icon{
+                font-size: 18px;
+                color: rebeccapurple;
+            }
+
+            span{
+                font-size: 13px;
+                font-weight: 600;
+                color: #888;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .bottom{
+        padding-left: 10px;
+        
+        .title{
+            font-size: 10px;
+            font-weight: bold;
+            color: #999;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .mode{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+
+        }
+
+        .coloroption{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid rebeccapurple;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+        }
+    }
+}
